@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi página web vacía</title>    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    <div id="app">
+
+        <h1>{{ message }}</h1>
+
+    </div>
+
+    <script>
+
+        const { createApp, ref } = Vue
+      
+        createApp({
+          setup() {
+            const message = ref('Hola mundo Vue!')
+            return {
+              message
+            }
+          }
+        }).mount('#app')
+
+    </script>
+    
+</body>
+</html>
